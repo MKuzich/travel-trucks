@@ -12,7 +12,9 @@ const VehicleDetails = ({ data }) => {
       <ul className={css.list}>
         <li className={css.item}>
           <span className={css.attr}>Form</span>
-          <span className={css.attr}>{data.form}</span>
+          <span className={css.attr}>
+            {data.form === "panelTruck" ? "Panel truck" : data.form}
+          </span>
         </li>
         {attrs.map((attr) => (
           <li key={attr} className={css.item}>

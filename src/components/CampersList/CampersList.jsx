@@ -21,7 +21,7 @@ const CampersList = () => {
       {campers.loading && <Loader />}
       {campers.error && <Error message={campers.error} />}
       <div>
-        {!campers.error && campers.items.length && (
+        {!campers.error && campers.items.length ? (
           <ul className={css.list}>
             {campers.items.map((camper) => (
               <li key={camper.id}>
@@ -29,8 +29,10 @@ const CampersList = () => {
               </li>
             ))}
           </ul>
+        ) : (
+          <Error message="No campers found" />
         )}
-        {campers.total > campers.items.length && (
+        {campers.total > campers.items.length && !campers.loading && (
           <button type="button" className={css.btn} onClick={loadMore}>
             Load more
           </button>

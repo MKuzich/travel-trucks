@@ -26,12 +26,6 @@ const Filter = () => {
     type: searchParams.get("type") || "",
   });
 
-  const onSubmit = (data) => {
-    dispatch(clearCampers());
-    dispatch(changeFilter(data));
-    setSearchParams(data);
-  };
-
   useEffect(() => {
     if (
       initialValues.current.location !== filter.location ||
@@ -43,7 +37,13 @@ const Filter = () => {
       dispatch(clearCampers());
       dispatch(changeFilter({ ...initialValues.current, page: 1 }));
     }
-  }, [dispatch, filter.equipment, filter.location, filter.type]);
+  }, []);
+
+  const onSubmit = (data) => {
+    dispatch(clearCampers());
+    dispatch(changeFilter({ ...data, page: 1 }));
+    setSearchParams(data);
+  };
 
   return (
     <Formik initialValues={initialValues.current} onSubmit={onSubmit}>

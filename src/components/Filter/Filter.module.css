@@ -36,7 +36,8 @@
   transition: fill 0.25s ease;
 }
 
-.inputWrap:has(.input:hover) .inputIcon {
+.inputWrap:has(.input:hover) .inputIcon,
+.inputWrap:has(.input:not(:placeholder-shown)) .inputIcon {
   fill: #101828;
 }
 

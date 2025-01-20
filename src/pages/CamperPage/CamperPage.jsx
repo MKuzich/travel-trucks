@@ -111,17 +111,18 @@ const CamperPage = () => {
                       type="text"
                       name="date"
                       placeholder="Booking date*"
-                      className={`${css.input} ${css.date}`}
+                      className={css.input}
                       required
                       onFocus={(e) => (e.target.type = "date")}
                       onBlur={(e) => (e.target.type = "text")}
+                      min={new Date().toISOString().split("T")[0]}
                     />
                     <Field
-                      type="text"
                       name="comment"
                       as="textarea"
                       placeholder="Comment"
                       className={css.input}
+                      rows="3"
                     />
                   </div>
                   <button type="submit" className={"link " + css.submit}>
