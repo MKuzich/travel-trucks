@@ -1,0 +1,28 @@
+.section {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../assets/hero.jpg") no-repeat center center/cover;
+  height: calc(100vh - 5rem);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.title {
+  color: #f7f7f7;
+  font-size: 3rem;
+  line-height: 0.66;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}

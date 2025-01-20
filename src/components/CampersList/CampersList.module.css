@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn {
+  display: block;
+  max-width: max-content;
+  border: 1px solid #dadde1;
+  transition: border-color 0.25s ease;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  color: #101828;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 2.5rem auto 0;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: #d84343;
+}

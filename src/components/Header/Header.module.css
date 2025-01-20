@@ -1,0 +1,40 @@
+.icon {
+  height: 1rem;
+  width: 8.5rem;
+}
+
+.logo {
+  max-width: min-content;
+  /* padding: 0.25rem 0; */
+  display: block;
+}
+
+.header {
+  padding: 1.75rem 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-weight: 500;
+  color: #101828;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.link:hover,
+.link:focus {
+  color: #d84343;
+}

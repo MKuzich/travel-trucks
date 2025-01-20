@@ -1,0 +1,61 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.item {
+  padding: 0.75rem 0;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #e44848;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #101828;
+  margin-bottom: 0.25rem;
+}
+
+.comment {
+  color: #475467;
+}
+
+.rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.starActive {
+  fill: #ffc531;
+}
+
+.star {
+  fill: #f2f4f7;
+}
+
+.starActive,
+.star {
+  height: 1rem;
+  width: 1rem;
+}
